@@ -1,0 +1,103 @@
+
+/*below is the styling for the nav bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DE869D;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	opacity: .95;
+   
+
+}
+li {
+    float: left;   
+}
+
+/*Padding, font and font color for navigational controls*/
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+/*The hovering options for current section of web page */
+
+li a:hover {
+    background-color: #DE869D;
+}
+
+/*This is for active links */
+
+li a:hover:not(.active) {
+    background-color: #F1A9B5;
+}
+
+.active {
+    background-color: #89749F;
+    text-decoration-color: white;
+}
+
+
+/*font style */
+body, html
+    height 100%;
+    font-size 100%;
+    margin 0;
+    padding 0;
+    
+body
+    font-family 'Roboto';
+    background #fff;
+
+// Typography
+
+p
+    color #666
+    margin-bottom 34px
+    font-size 13px
+    line-height 26px
+    font-weight 300
+    letter-spacing .6px
+    
+a
+    outline none
+    text-decoration none
+    color #ccc
+    transition all .3s ease
+    border-bottom 1px solid #ccc
+    padding-bottom 4px
+    &:hover
+        opacity .8
+
+.font-styles{
+    font-family: Source Sans Pro, sans-serif;
+    font-weight:normal;
+}
+
+/* to position my name over header img */
+.overlay{
+    position:absolute;
+    top:0 ;right:0;bottom:0;left:0;
+    background:rgba(0,0,0,0);
+    text-align:center;
+    color: white;
+}
+
+.title{
+    font-size:4em;
+}
+
+.social-icons {
+
+}
+
+

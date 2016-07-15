@@ -1,0 +1,243 @@
+
+/*-------------------Styling for sections---------------*/
+
+body {
+background-color:white;
+}
+
+section .home {
+    
+  z-index: 0;
+  display: none;
+  
+}
+
+
+section {
+    
+  background-color: #E9E9E9;
+  width: 1000px;
+  height:400px;
+  margin: auto;
+  line-height: 24px;
+  font-size: 1em;
+  font-weight:700;
+  padding:0px;
+}
+/*below is the styling for the nav bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DE869D;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	opacity: .95;
+   
+
+}
+li {
+    float: right;   
+}
+
+/*Padding, font and font color for navigational controls*/
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+/*The hovering options for current section of web page */
+
+li a:hover {
+    background-color: #DE869D;
+}
+
+/*This is for active links */
+
+li a:hover:not(.active) {
+    background-color: #F1A9B5;
+}
+
+.active {
+    background-color: #89749F;
+    text-decoration-color: white;
+}
+
+/*NEW OPTIONS */
+#name h1{
+    
+    
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    text-align:  center;
+    width:100%;
+
+}
+
+
+
+header {
+  background: url("img/demo/_small/swissalps.jpg") 
+  center center;
+  background-size: cover;
+  padding-bottom: 70px;
+  position:center;
+  z-index: -1;
+}
+header h1{
+  text-align: center;
+  font-size: 68px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  clear: both;
+  padding-top: 30px;
+}
+
+
+
+
+/*IMG formatting */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    
+  shape-outside: url(italy.jpg);
+  shape-image-threshold: 0.50px;
+  float: right;
+  width: 20%;
+  height: 30%;
+  top: 10px; 
+
+}
+
+
+
+/* ------------------------text ----------------------*/
+
+p, nav, form, footer, div {
+    color :black;
+    margin-left: 20px;
+    font-size :15px;
+    line-height :26px;
+    font-weight :300;
+    letter-spacing :.6px;
+    font-family: 'Roboto' sans-serif;
+    display: inline;
+    text-align: center;
+    text-indent: 10px;
+  }  
+
+h2, nav {
+    color :black;
+    margin-left: 10px;
+    font-size :18px;
+    line-height :26px;
+    font-weight :300;
+    letter-spacing :.6px;
+    font-family: 'Roboto' sans-serif;
+
+}
+
+h1 {
+    color :black;
+    margin-left:14px;
+    font-size :20px;
+    line-height :26px;
+    font-weight :300 ;
+    letter-spacing :.6px;
+    font-family: 'Roboto' sans-serif;
+
+}
+
+caption {
+    color :black;
+    margin-left: 20px;
+    font-size :13px;
+    line-height :26px;
+    font-weight :300;
+    letter-spacing :.6px;
+    font-family: 'Roboto' sans-serif;
+    text-transform: 10px;
+    text-align: center;
+
+}
+
+/*-----------------------Social Icons---------------------------*/
+
+ul {
+    padding:0;
+    list-style: none;
+}
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+  margin: 0 auto;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons {   
+    margin-top: 10px;
+
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+}
+
+.social-icons a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    padding:10px 11px 8px 11px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.fa-twitter {
+    padding:10px 10px 7px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+
+
+
+
