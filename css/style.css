@@ -1,32 +1,82 @@
+/*------background styling------*/
 
-/*-------------------Styling for sections---------------*/
-
-body {
-background-color:white;
+{   
+	background-color: white;
+	margin:0;
+	padding:0;
 }
-
-section .home {
-    
-  z-index: 0;
-  display: none;
-  
-}
-
-
+/*------section styling------*/
 section {
     
   background-color: #E9E9E9;
   width: 1000px;
-  height:400px;
-  margin: auto;
-  line-height: 24px;
-  font-size: 1em;
-  font-weight:700;
-  padding:0px;
+  height:vh; /*vh is for the browser's viewport height */
+  margin: auto; 
 }
-/*below is the styling for the nav bar */
 
-ul {
+
+
+
+/*------header text styling------*/
+#headerimage h1{
+    font-size: 55px;
+    color: white;
+    letter-spacing :2.5px;
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    text-align:  center;
+    width:100%;
+    line-height :50px;
+    
+}
+/*------header image  styling------*/
+#headerimage {
+   
+   background: url(../img/demo/_small/swissalps.jpg);
+  
+  background-size: cover;
+  padding-bottom: 70px;
+  position:center;
+  z-index: -1;
+  width:100%;
+  height:125vh; /*vh is for the browser's viewport height */
+}
+
+/*------text styling------*/
+
+ body, p, nav {
+    color :#2C2B4D;
+    margin: 0;
+    font-size :15px;
+    line-height :30px;
+    font-weight :300;
+    letter-spacing :.6px;
+    display: inline;
+    text-align: center;
+    font-family: 'Roboto',  serif;
+} 
+/*------Setting the style for the figure captions------*/
+caption {
+	font-size:13px;
+	font-weight: 150;
+}
+/*------setting the style for h1------*/
+h1 {
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 45px;
+	letter-spacing :.6px;
+}
+/*------setting the style for h2------*/
+h2 {
+	font-size: 20px;
+	font-weight: 25;
+	line-height :20px;
+}
+
+/* nav bar styling */
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -36,16 +86,19 @@ ul {
     top: 0;
     width: 100%;
 	opacity: .95;
-   
+	z-index: 2;
+    
 
 }
-li {
-    float: right;   
+
+/*float all sections to right */
+.nav li{
+    float: right;       
 }
 
 /*Padding, font and font color for navigational controls*/
 
-li a {
+.nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -54,70 +107,43 @@ li a {
     
 }
 
-/*The hovering options for current section of web page */
 
-li a:hover {
-    background-color: #DE869D;
-}
+/*When mouse hovers over section it will change to this color */
 
-/*This is for active links */
-
-li a:hover:not(.active) {
+ li a:hover:not(.active) {
     background-color: #F1A9B5;
 }
 
+/*When section is active it will be a different color */
 .active {
     background-color: #89749F;
     text-decoration-color: white;
 }
 
-/*NEW OPTIONS */
-#name h1{
-    
-    
-    z-index: 1;
-    position: absolute;
-    top: 200px;
-    text-align:  center;
-    width:100%;
+
+
+
+
+
+/*------about me:skills icon styling, icons by ------*/
+
+.skills img {
+	display:inline;
+	width:10%;
+	height:17vh;
+  opacity: .5;
+	
 
 }
 
+/*------interests image styling------*/
 
 
-header {
-  background: url("img/demo/_small/swissalps.jpg") 
-  center center;
-  background-size: cover;
-  padding-bottom: 70px;
-  position:center;
-  z-index: -1;
-}
-header h1{
-  text-align: center;
-  font-size: 68px;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.icon img{
   
-  clear: both;
-  padding-top: 30px;
-}
 
-
-
-
-/*IMG formatting */
-img {
-    width: 100%;
-    height: 100%;
-}
-
-.icon {
-    
-  shape-outside: url(italy.jpg);
-  shape-image-threshold: 0.50px;
+  shape-outside: url(italy.jpg), url(surfingt&t.jpg);
+  shape-image-threshold: 1.50px;
   float: right;
   width: 20%;
   height: 30%;
@@ -125,119 +151,79 @@ img {
 
 }
 
-
-
-/* ------------------------text ----------------------*/
-
-p, nav, form, footer, div {
-    color :black;
-    margin-left: 20px;
-    font-size :15px;
-    line-height :26px;
-    font-weight :300;
-    letter-spacing :.6px;
-    font-family: 'Roboto' sans-serif;
-    display: inline;
-    text-align: center;
-    text-indent: 10px;
-  }  
-
-h2, nav {
-    color :black;
-    margin-left: 10px;
-    font-size :18px;
-    line-height :26px;
-    font-weight :300;
-    letter-spacing :.6px;
-    font-family: 'Roboto' sans-serif;
-
+/* Portfolio icon Styling*/
+ 
+#Portfolio {
+  letter-spacing: 10px; 
 }
 
-h1 {
-    color :black;
-    margin-left:14px;
-    font-size :20px;
-    line-height :26px;
-    font-weight :300 ;
-    letter-spacing :.6px;
-    font-family: 'Roboto' sans-serif;
-
+ #portfolioicon1 {
+  display: inline;
+  width: 100px;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/demo/_small/juicecaboose.png");
+  opacity:.35;
 }
 
-caption {
-    color :black;
-    margin-left: 20px;
-    font-size :13px;
-    line-height :26px;
-    font-weight :300;
-    letter-spacing :.6px;
-    font-family: 'Roboto' sans-serif;
-    text-transform: 10px;
-    text-align: center;
-
+#portfolioicon2{
+  display:inline;
+  width: 100px;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/demo/_small/beericon.png");
+  opacity:.35;
 }
 
-/*-----------------------Social Icons---------------------------*/
-
-ul {
-    padding:0;
-    list-style: none;
+#portfolioicon3{
+  display:inline;
+  width: 100px;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/demo/_small/brickbreaker.png");
+  opacity:.35;
 }
 
-.footer-social-icons {
-    width: 350px;
-    display:block;
-  margin: 0 auto;
+#portfolioicon4{
+  display:inline;
+  width: 100px;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/demo/_small/SVGChallenge.png");
+  opacity:.35;
 }
 
-.social-icon {
-    color: #fff;
+/* Contact me icon styling 
+#contacticon1{
+  display:inline;
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/demo/socialmedia/linkedin.png");
+  
 }
 
-ul.social-icons {   
-    margin-top: 10px;
-
+#contacticon2{
+  display:inline;
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/demo/socialmedia/github.png");
+  
 }
 
-.social-icons li {
-    vertical-align: top;
-    display: inline;
-}
+#contacticon3{
+  display:inline;
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/demo/socialmedia/twitter.png");
 
-.social-icons a {
-    color: #fff; 
-    text-decoration: none;
-}
-
-.fa-linkedin {
-    padding:10px 11px 8px 11px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-
-.fa-linkedin:hover {
-    background-color: #0073a4;
-}
-
-.fa-twitter {
-    padding:10px 10px 7px 10px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-
-.fa-twitter:hover {
-    background-color: #00aced;
+  
 }
 
 
 
-
+/*Icons are from http://tomswebspace.com/round-social-media-icons/ */
 

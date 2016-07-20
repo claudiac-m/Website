@@ -1,0 +1,248 @@
+
+/*-------------------Styling for sections---------------*/
+
+body {
+background-color:white;
+}
+
+active .home {
+    
+
+  display: none;
+  
+}
+
+
+section {
+    
+  background-color: #E9E9E9;
+  width: 1000px;
+  height:400px;
+  margin: auto;
+  line-height: 24px;
+  font-size: 1em;
+  font-weight:700;
+  padding:0px;
+}
+
+#Portfolio, #Interests, #About, #Contact {
+  padding-top: 40px;
+}
+
+
+
+/*NEW OPTIONS */
+#name h1{
+    
+    
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    text-align:  center;
+    width:100%;
+
+}
+
+
+
+.figure {
+  background: url("img/demo/_small/swissalps.jpg") 
+  center center;
+  background-size: cover;
+  padding-bottom: 70px;
+  position:center;
+  z-index: -1;
+}
+
+figure .headerimage{
+  width:100%;
+  height:100vh; /*vh gets height's viewport*/
+  float: left;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color:none;  
+}
+
+header h1{
+  text-align: center;
+  font-size: 68px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  clear: both;
+  padding-top: 30px;
+}
+
+
+
+
+/*IMG formatting */
+.logo {
+    width: 100%;
+    height: 100vh;
+}
+
+.icon {
+    
+  shape-outside: url(italy.jpg);
+  shape-image-threshold: 0.50px;
+  float: right;
+  width: 20%;
+  height: 30%;
+  top: 10px; 
+
+}
+
+
+
+
+
+
+
+/*-------PORTFOLIO----------*/
+
+
+
+#portfolioicon1 {
+  display: inline;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+ margin: 5px;
+  float: left;
+position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  background-image: url("../img/demo/_small/juicecaboose.png");
+}
+
+
+#portfolioicon2 {
+  display: inline;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 5px;
+  float: left;
+/*  position: relative;*/
+  /*overflow: hidden;*/
+  -webkit-backface-visibility: hidden;
+  background-image: url("../img/demo/_small/beericon.png");
+}
+
+#portfolioicon3 {
+    display: inline;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 5px;
+  float: left;
+/*  position: relative;*/
+  /*overflow: hidden;*/
+  -webkit-backface-visibility: hidden;
+  background-image: url("../img/demo/_small/brickbreaker.png");
+}
+
+#portfolioicon4 {
+    display: inline;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 5px;
+  float: left;
+/*  position: relative;*/
+ /* overflow: hidden;*/
+  -webkit-backface-visibility: hidden;
+  background-image: url("../img/demo/_small/SVGChallenge.png");
+}
+
+
+}
+.portfolio p {
+  opacity: 0;
+  transition: .2s;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  position: relative;
+
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  line-height: 200px;
+}
+
+
+
+
+/*-----------------------Social Icons---------------------------
+
+ul {
+    padding:0;
+    list-style: none;
+}
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+  margin: 0 auto;
+}
+
+.social-icon {
+    color: #fff;
+}
+
+ul.social-icons {   
+    margin-top: 10px;
+
+}
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+}
+
+.social-icons a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    padding:10px 11px 8px 11px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.fa-twitter {
+    padding:10px 10px 7px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+----*/
+
+
+
+
+
