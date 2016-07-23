@@ -139,15 +139,17 @@ h2 {
 /*------interests image styling------*/
 
 
-.icon img{
+.icon img {
   
 
   shape-outside: url(italy.jpg), url(surfingt&t.jpg);
-  shape-image-threshold: 1.50px;
+  shape-image-threshold: 5px;
+  padding:5px;
   float: right;
   width: 20%;
   height: 30%;
-  top: 10px; 
+  
+  
 
 }
 
@@ -197,33 +199,12 @@ h2 {
   opacity:.35;
 }
 
-/* Contact me icon styling 
-#contacticon1{
-  display:inline;
-  width: 65px;
-  height: 65px;
-  background-image: url("../img/demo/socialmedia/linkedin.png");
-  
+
+/*CONTACT styling */
+
+#Contact img{
+  opacity: .65;
 }
-
-#contacticon2{
-  display:inline;
-  width: 65px;
-  height: 65px;
-  background-image: url("../img/demo/socialmedia/github.png");
-  
-}
-
-#contacticon3{
-  display:inline;
-  width: 65px;
-  height: 65px;
-  background-image: url("../img/demo/socialmedia/twitter.png");
-
-  
-}
-
-
 
 /*Icons are from http://tomswebspace.com/round-social-media-icons/ */
 
